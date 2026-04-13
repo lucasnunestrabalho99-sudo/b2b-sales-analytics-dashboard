@@ -92,7 +92,7 @@ def gerar_dados_fake(cod_cliente, data_ini, data_fim):
         'Fabric': np.random.choice(['PetBr', 'GatosS/A', 'DogMaster', 'BioPet'], n_linhas),
         'Categ': np.random.choice(['Alimentos', 'Petiscos', 'Higiene'], n_linhas),
         'Qtde': np.random.randint(1, 20, n_linhas),
-        'CodClien': cod_cliente
+        'CodClien': cod_cliente,
         'ItemBonif': 0
     })
     
