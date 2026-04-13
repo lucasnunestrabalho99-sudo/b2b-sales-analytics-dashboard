@@ -93,6 +93,7 @@ def gerar_dados_fake(cod_cliente, data_ini, data_fim):
         'Categ': np.random.choice(['Alimentos', 'Petiscos', 'Higiene'], n_linhas),
         'Qtde': np.random.randint(1, 20, n_linhas),
         'CodClien': cod_cliente
+        'ItemBonif': 0
     })
     
     # Simula o valor de venda (Preço unitário entre 15 e 150 reais)
