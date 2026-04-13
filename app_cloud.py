@@ -674,7 +674,7 @@ if df_raw is not None and not df_raw.empty:
                 return 'color: #388E3C;'
 
             st.dataframe(
-                df_show.style.applymap(colorir_status, subset=['Status']).format({
+                df_show.style.map(colorir_status, subset=['Status']).format({
                     'Qtd. Total Hist.': format_int_br,
                     'Qtd. Últ. Pedido': format_int_br,
                     'Menor Preço Pago': lambda x: format_brl(x) if x > 0 else '-',
